@@ -1,0 +1,48 @@
+<!--
+    2017123037 SAHIN SEMIH - HW6 HESAP MAKINESI - CSS GRID YAPISI KULLANARAK
+    @author cengsemihsahin
+    -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hesap Makinesi (Calculator)</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="jquery_library/jquery-3.5.0.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="schema"><!--TEMPLATE-->
+        <div></div><div></div><div></div><div></div><!--EMPTY AREAS-->
+        <div class="area"><!--CALCULATOR AREA-->
+            <div id="output"><!--OUTPUTS-->
+                <div class="screen"></div>
+                <div class="operator" id="delete"><img src="sil.png"></div>
+            </div>
+            <div id="numbers"><!--NUMBERS-->
+                <div class="number" id="num9">9</div>
+                <div class="number" id="num8">8</div>
+                <div class="number" id="num7">7</div>
+                <div class="number" id="num6">6</div>
+                <div class="number" id="num5">5</div>
+                <div class="number" id="num4">4</div>
+                <div class="number" id="num3">3</div>
+                <div class="number" id="num2">2</div>
+                <div class="number" id="num1">1</div>
+                <div class="number" id="num0">0</div>
+                <div id="numx"></div>
+                <div id="numy"></div>
+            </div>
+            <div id="operators"><!--OPERATORS-->
+                <div class="operator" id="division">/</div>
+                <div class="operator" id="multiple">*</div>
+                <div class="operator" id="minus">-</div>
+                <div class="operator" id="plus">+</div>
+                <div class="operator" id="equal">=</div>
+                <div class="operator" id="clear">C</div>
+            </div>
+        </div>
+        <div></div><div></div><div></div><div></div><!--EMPTY AREAS-->
+    </div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.schema {
+    height: 100%;
+    display: grid;
+    grid-template: 1fr 2fr 1fr / 1fr 1fr 1fr;
+}
+
+.area {
+    display: grid;
+    grid-template: 1fr 4fr / 5fr 1fr;
+    grid-gap: 3px;
+}
+
+#output {
+    grid-column: 1 / 3;
+    display: grid;
+    grid-template: 1fr / 5fr 1fr;
+    grid-gap: 3px;
+}
+
+#numbers {
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr;
+    grid-gap: 3px;
+    grid-template-areas: "n7 n8 n9" "n4 n5 n6" "n1 n2 n3" "x n0 y";
+}
+
+#operators {
+    display: grid;
+    grid-template: 4fr 4fr 4fr 4fr 5fr 5fr / 1fr;
+    grid-gap: 3px;
+}
+
+.number, .operator {
+    font-family: "Lucida Console";
+    font-weight: bold;
+    font-size: 33px;
+    text-align: center;
+    background-color: #b8a0ff;
+}
+
+.number { padding: 20%; }
+.operator { padding: 8%; }
+
+.number:hover, .operator:hover {
+    background-color: #ffde71;
+}
+
+#num0 { grid-area: n0; }
+#num1 { grid-area: n1; }
+#num2 { grid-area: n2; }
+#num3 { grid-area: n3; }
+#num4 { grid-area: n4; }
+#num5 { grid-area: n5; }
+#num6 { grid-area: n6; }
+#num7 { grid-area: n7; }
+#num8 { grid-area: n8; }
+#num9 { grid-area: n9; }
+#numx { grid-area: x; }
+#numy { grid-area: y; }
+
+.screen {
+    margin: 0;
+    padding: 0;
+    background-color: #2ad58f;
+    font-family: "Lucida Console";
+    font-weight: bold;
+    font-size: 70px;
+    text-align: right;
+}
